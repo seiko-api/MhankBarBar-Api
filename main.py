@@ -120,9 +120,9 @@ def spamcall():
             kyaa = post('https://id.jagreward.com/member/verify-mobile/%s' % no).json()
             print(kyaa['message'])
             if 'Anda akan menerima' in kyaa['message']:
-                hasil += '[!] Berhasil mengirim spam call ke nomor : 62%s' % no
+                hasil += 'Sukses mengirimkan call ke 62%s' % no
             else:
-                hasil += '[!] Gagal mengirim spam call ke nomor : 62%s' % no
+                hasil += 'Gagal mengirimkan call ke 62%s' % no
             return {
                 'status': 200,
                 'logs': hasil
@@ -130,12 +130,12 @@ def spamcall():
         else:
             return {
                 'status': False,
-                'msg': '[!] Tolong masukkan nomor dengan awalan 8'
+                'msg': 'Masukkan nomor yang benar, contoh 851xxxx, jangan memakai 62'
             }
     else:
         return {
             'status': False,
-            'msg': '[!] Masukkan parameter no' 
+            'msg': 'Masukkan parameter nomor' 
         }
 @app.route('/api/spamsms', methods=['GET','POST'])
 def spamming():
