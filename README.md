@@ -6,5 +6,5 @@
 
 
 # note
-.ini adalah mentahan rest api pakek python flask sangat sederhana 
+ini adalah mentahan rest api pakek python flask sangat sederhana 
 Anda bisa kembangin lagi untuk fitur lainnya
